@@ -19,10 +19,6 @@ namespace TicTacToeApplication
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            GridForm NewGrid = new GridForm();
-            this.Visible = false;
-            NewGrid.Show();
-
             
         }
 
@@ -31,6 +27,13 @@ namespace TicTacToeApplication
             
         }
 
-        
+        private void humanVsHumanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GridForm NewGrid = new GridForm();
+            this.Hide();
+            NewGrid.M = this;
+            NewGrid.Show();
+        }
+  
     }
 }

@@ -74,7 +74,7 @@
             this.newGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.humanVsHumanToolStripMenuItem});
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             // 
             // humanVsHumanToolStripMenuItem
@@ -82,6 +82,7 @@
             this.humanVsHumanToolStripMenuItem.Name = "humanVsHumanToolStripMenuItem";
             this.humanVsHumanToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.humanVsHumanToolStripMenuItem.Text = "Human vs Human";
+            this.humanVsHumanToolStripMenuItem.Click += new System.EventHandler(this.humanVsHumanToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace TicTacToeApplication
 {
     class Player
@@ -54,6 +53,11 @@ namespace TicTacToeApplication
         public Player(string name)
         {
             this.name = name;
+        }
+
+        public void doMove(int i,int j,Grid gridRefference,bool playerturn)
+        {
+            gridRefference.checkSquare(playerturn, i, j);
         }
     }
 }
